@@ -10,46 +10,87 @@
   <script src="./dark.js"></script>
   <body>
     <div class="fixed-top">
-      <div class="container">
-        <header class="d-flex justify-content-between py-3">
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="./computing_in_sport.html" class="nav-link active">Computing in Sport</a></li>
-            <li class="nav-item"><a href="./computing_in_music.html" class="nav-link">Computing in Music</a></li>
-            <li class="nav-item"><a href="./finance.html" class="nav-link">Computing in Finance</a></li>
-          </ul>
-          <li class="nav-item dropdown">
-            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme">
-              <span id="bd-theme-text">Theme</span>
-            </button>
-            <ul class="dropdown-menu" id="theme-menu" aria-labelledby="bd-theme">
-              <li><button type="button" class="dropdown-item" data-bs-theme-value="light">Light</button></li>
-              <li><button type="button" class="dropdown-item" data-bs-theme-value="dark">Dark</button></li>
-              <li><button type="button" class="dropdown-item active" data-bs-theme-value="auto">Auto</button></li>
+      <div class="header-container bg-dark text-light">
+        <div class="container">
+          <header class="d-flex justify-content-between py-3">
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">Home</a></li>
+              <li class="nav-item"><a href="./computing_in_sport.html" class="nav-link active">Computing in Sport</a></li>
+              <li class="nav-item"><a href="./computing_in_music.html" class="nav-link">Computing In Music</a></li>
+              <li class="nav-item"><a href="./finance.html" class="nav-link">Computing in Finance</a></li>
             </ul>
-          </li>
-        </header>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme">
+                <span id="bd-theme-text">Theme</span>
+              </button>
+              <ul class="dropdown-menu" id="theme-menu" aria-labelledby="bd-theme">
+                <li><button type="button" class="dropdown-item" data-bs-theme-value="light">Light</button></li>
+                <li><button type="button" class="dropdown-item" data-bs-theme-value="dark">Dark</button></li>
+                <li><button type="button" class="dropdown-item active" data-bs-theme-value="auto">Auto</button></li>
+              </ul>
+            </li>
+          </header>
+        </div>
       </div>
       <div class="b-divider"></div>
     </div>
 
-    <div class="container d-flex flex-column align-items-center justify-content-center p-5" style="min-width: 100%; min-height: calc(100vh - 5rem);">
-      <h1>Hello, world!</h1>
-      <p>My first Bootstrap page.</p>
+    <div class="container d-flex flex-column align-items-center justify-content-center p-5" style="text-align:center; min-width: 100%; min-height: calc(100vh - 5rem);">
+      <p></p> 
+      <p></p> 
+      <h1>Computing in Sport</h1>
+      <p></p> 
+      <p>Computing in sport is a discipline working towards combining the areas of informatics and sport science.</p>
+      <h3>History of Computing in Sport</h3>
+      <p>In the 1960s, computers entered sports primarily for collecting sports data. 
+        This led to the establishment of databases and the formation of the International 
+        Association for Sports Information (IASI) by the mid-1970s. Meetings aimed at 
+        standardizing sports documentation were frequent. Based on the progress of computer 
+        science and the invention of more powerful computer hardware in the 1970s, also the real 
+        history of computer science in sport began.
+      
+        The primary research areas in computer science in sports encompass, among others: <br>
+        <p align="left">
+        - Computer-assisted training and coaching <br>
+        - Biomechanics <br>
+        - Sports equipment and technology <br>
+        - Computer-assisted applications (software, hardware) in sports <br>
+        - Ubiquitous computing in sports <br>
+        - Multimedia and Internet <br>
+        - Documentation <br>
+        - Education
+        </p>
+
+        <p>
+          This page will specifically be going over the use of computing in golf, focusing on the use of golf ball trackers, known as "launch monitors".
+          In golf, when a ball is hit it recieves a spin, which is the rotation of the ball around its axis, a launch angle, 
+          which is the angle at which the ball is hit, a push angle, which is the angle at which the ball is hit relative to the target line,
+           and a velocity, which is the speed at which the ball is hit. <br>
+
+          <br>What a launch monitor does is track these variables, each of which is important for a golfer to understand, and then uses them to calculate the distance the ball will travel and where it will land.
+          There are two types of launch monitors, those which track the ball using a camera, and those which use radar.
+          The camera based launch monitors are more accurate, but are also more expensive. What they do is take thousands of photos a second.
+          With these photos, the velocity, spin, launch angle and push angle are found. Once these are found from analysing the photos, the distance the ball will travel and where it will land can then be calculated.
+          <br>
+          <br>
+          The introduction of computer science and therefore the use of launch monitors in golf has allowed golfers to push the limits of the game over the past two decades, with today's professional golfers hitting the ball further and more accurately than ever before.
+        </p>
     </div>
 
     <div class="fixed-bottom">
       <div class="b-divider-small"></div>
-      <div class="container">
-        <footer class="d-flex justify-content-center align-items-center">
-          <div class="d-flex align-items-center footer-content py-2">
-            <p class="text-muted">Harry Law</p>
-            <p>
-              <a href="https://github.com/h5law" target="_blank">GitHub</a> |
-              <a href="https://www.linkedin.com/in/harryslaw" target="_blank">LinkedIn</a>
-            </p>
-          </div>
-        </footer>
+      <div class="footer-container bg-dark text-light">
+        <div class="container">
+          <footer class="d-flex justify-content-center align-items-center">
+            <div class="d-flex align-items-center footer-content py-2">
+              <p class="text-muted">Harry Law</p>
+              <p>
+                <a href="https://github.com/h5law" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/harryslaw" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </footer>
+        </div>
       </div>
     </div>
 
