@@ -18,10 +18,32 @@ const getPreferredTheme = () => {
 }
 
 const setTheme = theme => {
+    const header = document.getElementsByClassName('header-container').item(0);
+    const footer = document.getElementsByClassName('footer-container').item(0);
+
     if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.documentElement.setAttribute('data-bs-theme', 'dark')
+        if (header != null && footer != null) {
+            header.classList.remove('bg-light', 'text-dark');
+            header.classList.add('bg-dark', 'text-light');
+            footer.classList.remove('bg-light', 'text-dark');
+            footer.classList.add('bg-dark', 'text-light');
+        }
     } else {
         document.documentElement.setAttribute('data-bs-theme', theme)
+        if (header != null && footer != null) {
+            if (theme === 'dark') {
+                header.classList.remove('bg-light', 'text-dark');
+                header.classList.add('bg-dark', 'text-light');
+                footer.classList.remove('bg-light', 'text-dark');
+                footer.classList.add('bg-dark', 'text-light');
+            } else {
+                header.classList.remove('bg-dark', 'text-light');
+                header.classList.add('bg-light', 'text-dark');
+                footer.classList.remove('bg-dark', 'text-light');
+                footer.classList.add('bg-light', 'text-dark');
+            }
+        }
     }
 }
 
@@ -29,7 +51,6 @@ setTheme(getPreferredTheme())
 
 const showActiveTheme = (theme, focus = false) => {
     const themeSwitcher = document.querySelector('#bd-theme')
-    console.log(themeSwitcher)
 
     if (!themeSwitcher) {
         return
