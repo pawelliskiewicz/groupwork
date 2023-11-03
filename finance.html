@@ -3,38 +3,119 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Demo</title>
+    <title>Computing in Finance</title>
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
   </head>
   <script src="./dark.js"></script>
   <body>
-    <div class="container">
-      <header class="d-flex justify-content-between py-3">
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="./computing_in_sport.html" class="nav-link">Computing in Sport</a></li>
-          <li class="nav-item"><a href="./computing_in_music.html" class="nav-link">Computing In Music</a></li>
-          <li class="nav-item"><a href="./finance.html" class="nav-link active">Computing in Finance</a></li>
-        </ul>
-        <li class="nav-item dropdown">
-          <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme">
-            <span id="bd-theme-text">Theme</span>
-          </button>
-          <ul class="dropdown-menu" id="theme-menu" aria-labelledby="bd-theme">
-            <li><button type="button" class="dropdown-item" data-bs-theme-value="light">Light</button></li>
-            <li><button type="button" class="dropdown-item" data-bs-theme-value="dark">Dark</button></li>
-            <li><button type="button" class="dropdown-item active" data-bs-theme-value="auto">Auto</button></li>
-          </ul>
-        </li>
-      </header>
+    <div class="fixed-top">
+      <div class="header-container bg-dark text-light">
+        <div class="container">
+          <header class="d-flex justify-content-between py-3">
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">Home</a></li>
+              <li class="nav-item"><a href="./computing_in_sport.html" class="nav-link">Computing in Sport</a></li>
+              <li class="nav-item"><a href="./computing_in_music.html" class="nav-link">Computing In Music</a></li>
+              <li class="nav-item"><a href="./finance.html" class="nav-link active">Computing in Finance</a></li>
+            </ul>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme">
+                <span id="bd-theme-text">Theme</span>
+              </button>
+              <ul class="dropdown-menu" id="theme-menu" aria-labelledby="bd-theme">
+                <li><button type="button" class="dropdown-item" data-bs-theme-value="light">Light</button></li>
+                <li><button type="button" class="dropdown-item" data-bs-theme-value="dark">Dark</button></li>
+                <li><button type="button" class="dropdown-item active" data-bs-theme-value="auto">Auto</button></li>
+              </ul>
+            </li>
+          </header>
+        </div>
+      </div>
+      <div class="b-divider"></div>
     </div>
 
-    <div class="b-divider"></div>
+    <div class="container d-flex flex-column align-items-center justify-content-center" id="homePageBody">
+      <div class="container mb-4">
+        <h2 class="text-center mb-3">Revolutionizing Finance through Computing</h2>
+        <p class="text-justify">
+          The advent of computing technologies has played a pivotal role in transforming the finance sector, bringing about unprecedented efficiency, security, and innovation. Automation has streamlined transactions and operational processes, significantly reducing errors and enhancing speed. Security measures have been bolstered through advanced encryption and fraud detection algorithms, safeguarding sensitive financial data and transactions.
+        </p>
+        <p class="text-justify">
+          The integration of algorithmic trading has enabled high-frequency transactions and robust risk management, while mobile banking has extended the accessibility of financial services, allowing users to manage their finances anytime, anywhere. Innovations in financial products, including the introduction of blockchain and cryptocurrencies, have opened new avenues for secure and transparent transactions. Disaster recovery mechanisms ensure business continuity and data protection in the event of unforeseen circumstances. Additionally, the globalization of financial services has facilitated seamless cross-border transactions and provided access to global markets. Research and development efforts in financial modeling and data-driven decision-making continue to propel the industry forward, underscoring the transformative impact of computing on finance.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">1. Automated Transactions and Operations</h5>
+              <p class="card-text">Facilitating speed, efficiency, and error reduction in financial transactions and operations.</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">2. Enhanced Security</h5>
+              <p class="card-text">Implementing advanced encryption and fraud detection to secure financial data and transactions.</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">3. Algorithmic Trading</h5>
+              <p class="card-text">Leveraging high-frequency trading and sophisticated risk management algorithms.</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">4. Mobile Banking and Accessibility</h5>
+              <p class="card-text">Providing anywhere, anytime access and enabling secure mobile payments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">5. Innovation in Financial Products</h5>
+              <p class="card-text">Introducing new financial instruments, blockchain, and cryptocurrencies.</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">6. Disaster Recovery and Business Continuity</h5>
+              <p class="card-text">Ensuring data backup and continuous operation during unforeseen events.</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">7. Globalization of Financial Services</h5>
+              <p class="card-text">Facilitating cross-border transactions and access to global markets.</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">8. Research and Development</h5>
+              <p class="card-text">Engaging in financial modeling and data-driven decision making.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="container d-flex flex-column align-items-center justify-content-center p-5" style="min-width: 100%; min-height: calc(100vh - 5rem);">
-      <h1>Hello, world!</h1>
-      <p>My first Bootstrap page.</p>
+    <div class="fixed-bottom">
+      <div class="b-divider-small"></div>
+      <div class="footer-container bg-dark text-light">
+        <div class="container">
+          <footer class="d-flex justify-content-center align-items-center">
+            <div class="d-flex align-items-center footer-content py-2">
+              <p class="text-muted">Harry Law</p>
+              <p>
+                <a href="https://github.com/h5law" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/harryslaw" target="_blank">LinkedIn</a>
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

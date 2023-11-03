@@ -1,9 +1,26 @@
+.header-container, .footer-container {
+    z-index: 1000;
+}
+
 .b-divider {
     height: 0.5rem;
     background-color: rgba(0, 0, 0, .1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-divider-small {
+    height: 0.25rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    margin: 15px 0 0 0;
+}
+
+.b-divider-smaller {
+    height: 0.15rem;
 }
 
 #theme-menu {
@@ -22,6 +39,11 @@
 
 
 .container_music {
+    padding-top:5rem;
+    padding-bottom:3.5rem;
+    min-height: calc(100vh - 5rem);
+    min-width:100%;
+    width: 85%;
     display: flex;
     align-items: left; 
     justify-content: centre;
@@ -37,3 +59,40 @@
    .text {
      font-size: 15px;
    }
+
+#homePageHeader {
+    text-align: center;
+}
+
+#homePageBody {
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+    min-width: 100%;
+    min-height: calc(100vh - 5rem);
+    width: 85%;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content p:first-child {
+    margin-right: 1rem;
+}
+
+.footer-content p + p {
+    margin-left: 1rem;
+}
+
+.footer-content a {
+    margin: 0 .5rem;
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer-content a:hover,
+.footer-content a:focus {
+    text-decoration: underline;
+    color: #0d6efd;
+}
