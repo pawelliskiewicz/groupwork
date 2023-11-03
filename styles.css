@@ -37,6 +37,29 @@
     text-align: center;
 }
 
+
+.container_music {
+    padding-top:5rem;
+    padding-bottom:3.5rem;
+    min-height: calc(100vh - 5rem);
+    min-width:100%;
+    width: 85%;
+    display: flex;
+    align-items: left; 
+    justify-content: centre;
+   }
+   
+   img {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    float: left;
+   }
+   
+   .text {
+     font-size: 15px;
+   }
+
 #homePageHeader {
     text-align: center;
 }
